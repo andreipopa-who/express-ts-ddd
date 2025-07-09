@@ -3,6 +3,9 @@ import { ErrorHandler } from '../../../../../shared/domain/ErrorHandler';
 import { CreateActivityService } from '../../../../application';
 import { RequestValidator } from '../../../../../shared/infrastructure/express/RequestValidator';
 import { body } from 'express-validator';
+import * as express from 'express';
+
+express.static.mime.lookup('json');
 
 export class CreateActivityController {
   constructor(private createActivityService: CreateActivityService) {}
