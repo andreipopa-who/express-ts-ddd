@@ -10,6 +10,7 @@ export class CreateActivityController {
   public validate = [body(['type', 'content']).notEmpty(), RequestValidator];
 
   public async invoke(req: Request, res: Response, next: NextFunction): Promise<Response | void> {
+    req.acceptsCharsets('application/json');
     try {
       await this.createActivityService.invoke({
         type: req.body.type,

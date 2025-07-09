@@ -1,0 +1,31 @@
+custom_rules:
+  - id: Test rule
+    description: ''
+    severity: low
+    cwe: []
+    fix_analysis: ''
+    rule_code: |
+      CallExpression<
+        Or<
+          "acceptsCharsets",
+          "acceptsEncodings",
+          "acceptsLanguages"
+        >
+      >
+    languages:
+      - apex
+      - c
+      - cpp
+      - csharp
+      - go
+      - html
+      - java
+      - javascript
+      - kotlin
+      - php
+      - python
+      - ruby
+      - scala
+      - swift
+      - typescript
+      - vb
