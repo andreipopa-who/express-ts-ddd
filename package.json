@@ -27,7 +27,7 @@
     "schema": "prisma/schema.prisma"
   },
   "dependencies": {
-    "@prisma/client": "^4.9.0",
+    "@prisma/client": "^6.10.0",
     "add": "^2.0.6",
     "amazon-cognito-identity-js": "^6.1.2",
     "app-root-path": "^3.1.0",
