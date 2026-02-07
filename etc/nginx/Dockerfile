@@ -1,4 +1,4 @@
-FROM nginx:1.18-alpine
+FROM nginx:1.29.5-alpine
 
 LABEL Maintainer="Gonzalo Plaza <gonzalo@verize.com>" \
       Description="Lightweight container with Nginx 1.18 & Node 16 based on Alpine Linux"
